@@ -17,6 +17,8 @@ Feature: Registration
 #  #1. using the parameterisation ""
   Scenario: Invalid email address
     Given I navigate to blueskycitadelform site
+    #And I wait for popus to appear
+    #And I click on the close button
     And I click on Login/Register
     And I click on Register now
     When I enter the username "MYUSERNAMETEST"
